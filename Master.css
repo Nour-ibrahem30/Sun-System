@@ -1,0 +1,345 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    /* 1. Sun */
+    --sun-gradient: linear-gradient(135deg, #FFD700, #FFA500, #FF4500);
+
+    /* 2. Mercury */
+    --mercury-gradient: linear-gradient(135deg, #BEBEBE, #8B8B8B, #5C5C5C);
+
+    /* 3. Venus */
+    --venus-gradient: linear-gradient(135deg, #EEDC82, #D4AF37, #C2B280);
+
+    /* 4. Earth */
+    --earth-gradient: linear-gradient(135deg, #1E90FF, #2E8B57, #FFFFFF);
+
+    /* 5. Mars */
+    --mars-gradient: linear-gradient(135deg, #B22222, #CD5C5C, #8B0000);
+
+    /* 6. Jupiter */
+    --jupiter-gradient: linear-gradient(135deg, #D2B48C, #C19A6B, #FFF8DC);
+
+    /* 7. Saturn */
+    --saturn-gradient: linear-gradient(135deg, #F5DEB3, #E0CDA9, #D2B48C);
+
+    /* 8. Uranus */
+    --uranus-gradient: linear-gradient(135deg, #AFEEEE, #40E0D0, #87CEFA);
+
+    /* 9. Neptune */
+    --neptune-gradient: linear-gradient(135deg, #4169E1, #4682B4, #191970);
+}
+
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* End Global Rules */
+/* Start Sun System */
+.Sun-System {
+
+    .Plan:nth-child(1) {
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(135deg, #FFD700, #FFA500, #FF4500);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    .Plan:nth-child(2) {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        z-index: 999;
+        top: 22rem;
+        left: 38rem;
+        animation-name: Spin-Rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        transition: rotate 0.3s linear;
+    }
+
+    .Plan:nth-child(2)::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: var(--mercury-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: -32%;
+        transform: translate(50%, -50%);
+    }
+
+
+    .Plan:nth-child(3) {
+        position: relative;
+        width: 430px;
+        height: 430px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        z-index: 999;
+        top: -2rem;
+        left: 34rem;
+        animation-name: Spin-Rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        transition: rotate 0.3s linear;
+    }
+
+    .Plan:nth-child(3)::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: var(--venus-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 1%;
+        left: 37%;
+        transform: translate(50%, -50%);
+    }
+
+    .Plan:nth-child(4) {
+        position: relative;
+        width: 560px;
+        height: 560px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        z-index: 999;
+        top: -33rem;
+        left: 30rem;
+        animation-name: Spin-Rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        transition: rotate 0.3s linear;
+    }
+
+    .Plan:nth-child(4)::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: var(--earth-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 83%;
+        transform: translate(50%, -50%);
+    }
+
+    .Plan:nth-child(5) {
+        position: relative;
+        width: 695px;
+        height: 695px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        z-index: 999;
+        top: -72rem;
+        left: 26rem;
+        animation-name: Spin-Rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        transition: rotate 0.3s linear;
+    }
+
+    .Plan:nth-child(5)::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: var(--mars-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 99%;
+        left: 40%;
+        transform: translate(50%, -50%);
+        ;
+    }
+
+    .Plan:nth-child(6) {
+        position: relative;
+        width: 825px;
+        height: 825px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        z-index: 999;
+        top: -120rem;
+        left: 22rem;
+        animation-name: Spin-Rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        transition: rotate 0.3s linear;
+    }
+
+    .Plan:nth-child(6)::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: var(--jupiter-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 12%;
+        left: 3%;
+        transform: translate(50%, -50%);
+    }
+
+
+    .Plan:nth-child(7) {
+        position: relative;
+        width: 940px;
+        height: 940px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        z-index: 999;
+        top: -175rem;
+        left: 18rem;
+        animation-name: Spin-Rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+        transition: rotate 0.3s linear;
+    }
+
+    .Plan:nth-child(7)::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: var(--saturn-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 12%;
+        left: 72%;
+        transform: translate(50%, -50%);
+    }
+}
+
+
+
+@keyframes Spin-Rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 
+
+
+    .Plan:nth-child(7) {
+        width: 160px;
+        height: 160px;
+        background: var(--saturn-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 87%;
+        transform: translate(50%, -50%);
+    }
+
+    .Plan:nth-child(8) {
+        width: 160px;
+        height: 160px;
+        background: var(--uranus-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 87%;
+        transform: translate(50%, -50%);
+    }
+
+    .Plan:nth-child(9) {
+        width: 160px;
+        height: 160px;
+        background: var(--neptune-gradient);
+        border-radius: 50%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 87%;
+        transform: translate(50%, -50%);
+    } */
+
+
+/* End Sun System */
