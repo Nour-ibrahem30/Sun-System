@@ -12,7 +12,7 @@ The solar system is a fascinating educational topic, and visualizing it through 
 
 ## 2. 👥 Team Members
 
-- Nour Eldeen Ibrahem Mohamed Mohamed
+- Nour Ibrahem
 
 ## 3. 🗂️ Project Structure
 
@@ -67,7 +67,7 @@ This project is helpful for:
 
 Developed by:
 
-**Nour Eldeen Ibrahem Mohamed Mohamed**  
+**Nour Ibrahem**  
 📧 Email: nouribrahem207@gmail.com  
 🔗 [GitHub Profile](https://github.com/Nour-ibrahem30)  
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/nour-ibrahem-499172346)
